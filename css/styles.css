@@ -32,8 +32,9 @@ img{
     border: none;
  }
  section{
-    /* padding: 94px 0; */
+    padding: 94px 0;
  }
+ 
  /* page */
 .page {
     background-color: #FFFFFF;
@@ -64,12 +65,12 @@ header .row,
 .logo{
     color: #000;
     font-family: var(--accent-font);
-    font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 80px;
     letter-spacing: 0.03em;
     margin-right: 93px;
+    
 }
 .logoweb{
     color: var(--accent-color);
@@ -78,7 +79,6 @@ header .row,
 /* site-nav */
 .link{
     font-family: var(--main-font);
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 80px;
@@ -95,7 +95,6 @@ header .row,
 /* contacts */
 .contacts{
     font-family: var(--main-font);
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 80px;
@@ -119,7 +118,6 @@ header .row,
 }
 .hero .title{
     font-family: var(--main-font);
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -138,7 +136,6 @@ header .row,
     color: #FFFFFF;
     cursor: pointer;
     font-family: var(--main-font);
-    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 30px;
@@ -162,10 +159,12 @@ header .row,
 .features{
     padding: 94px 0;
 }
+.section-pb0{
+    padding-bottom: 0px;
+}
 .features-title{
     color: var(--title-text-color);
     font-family: var(--main-font);
-    font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
@@ -176,7 +175,6 @@ header .row,
 }
 .features-text{
     font-family: var(--main-font);
-    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
@@ -194,13 +192,17 @@ header .row,
 .interests .title{
     color: var(--title-text-color);
     font-family: var(--main-font);
-    font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    padding: 0px 0px 50px 0px;
+    margin-bottom: 50px;
+}
+.interests-list,
+.team-list{
+    display: flex;
+    justify-content: space-between;
 }
 .interests-box{
     width: calc((100%-90px) / 3);
@@ -209,57 +211,55 @@ header .row,
 /* team */
 .team{
     background-color: #F5F4FA;
-    padding-bottom: 94px;
 }
 .team .title{
     font-family: var(--main-font);
-    font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-    padding: 94px 0 50px 0;
+    padding-bottom: 50px;
 }
-.team-box{
+.card{
     width: calc((100%-90px) / 4);
     width: 270px;
     background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
-.team .employer{
+.team .employee{
     color: var(--title-text-color);
     font-family: var(--main-font);
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
-    padding: 30px 0 10px 0;
+    margin: 30px 0 10px 0;
 }
 .team .position{
     color: var(--normal-text-color);
     font-family: var(--main-font);
-    font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 /* copyright */
 .copyright{
     background-color: #2F303A;
-    height: 250px;
-}
-.copyright-box{
     padding: 60px 0;
 }
-.copyright .adress{
-    color: rgba(255, 255, 255, 0.6);
+.copyright .logo{
+    margin-bottom: 20px;
+    display: inline-block;
+    line-height: 35.96px;
+    margin-right: 0px;
 }
 .adress-text{
     font-family: var(--main-font);
@@ -282,3 +282,33 @@ header .row,
 .copyright .logo{
     color: #FFFFFF; 
 }
+
+
+
+/* PORTFOLIO */
+.portfolio{
+    width: 611px;
+    height: 54px;
+    margin: 94px auto 34px auto;
+    text-align: center;
+    
+}
+.portfolio-buttons{
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+    cursor: pointer;
+    padding: 6px 22px;
+    border-radius: 4px;
+}
+.portfolio-buttons:focus,
+.portfolio-buttons:hover{
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}
+/* projects */
